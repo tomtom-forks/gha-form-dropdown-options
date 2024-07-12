@@ -36,6 +36,10 @@ on:
     # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
     - cron: '0 0 * * *'
 
+permissions:
+  contents: write # for updating the form
+  pull-requests: write # for creating a PR
+
 jobs:
   pre:
     name: Prepare context for other jobs
