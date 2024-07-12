@@ -20,10 +20,10 @@ body:
       label: Repository Branches
       description: Fetched by action
       options:
-        - ci-update-long-report
+        - ci/elevate-gh-secret
+        - dependabot/github_actions/peter-evans/create-pull-request-4.2.4
+        - dependabot/npm_and_yarn/braces-3.0.3
         - main
-        - safeguard
-        - set-output
     validations:
       required: true
   - type: dropdown
